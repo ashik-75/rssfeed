@@ -8,9 +8,9 @@ app.use((req, res, next) => {
 	next();
 });
 
-app.get("/feed", (req, res) => {
+app.get("/", (req, res) => {
 	res.json({
-		message: "Root path",
+		message: "Generate rss feed from our domain",
 	});
 });
 
